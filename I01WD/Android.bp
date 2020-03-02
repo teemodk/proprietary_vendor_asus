@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2019-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -55,6 +55,39 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+}
+
+android_app_import {
+	name: "AsusCamera",
+	owner: "asus",
+	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "AsusGallery",
+	owner: "asus",
+	apk: "proprietary/priv-app/AsusGallery/AsusGallery.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "AsusGalleryBurst",
+	owner: "asus",
+	apk: "proprietary/priv-app/AsusGalleryBurst/AsusGalleryBurst.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
 }
 
 android_app_import {
